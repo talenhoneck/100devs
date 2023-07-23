@@ -1,0 +1,89 @@
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+	margin: 2em;
+	padding: 0;
+}
+
+/* LAYOUT */
+body {
+	background-color: #f2f2f2;
+	font-family: Arial, sans-serif;
+}
+header {
+	background-color: #333;
+	color: white;
+	padding: 1em;
+	text-align: center;
+}
+main {
+	margin: 2em auto;
+	max-width: 800px;
+	padding: 1em;
+	background-color: white;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.search-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2em;
+}
+input[type="text"] {
+	border: none;
+	border-radius: 3px;
+	padding: 1em;
+	font-size: 1.2em;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+button {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	padding: 1em;
+	margin-left: 1em;
+	font-size: 1.2em;
+	cursor: pointer;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.result-container {
+	border-top: 1px solid #eee;
+	padding-top: 2em;
+}
+h2 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+ul {
+	list-style: none;
+	padding-left: 1em;
+	margin-bottom: 2em;
+}
+ul li {
+	font-size: 1.2em;
+	line-height: 1.5;
+	border-left: 2px solid #ccc;
+	padding-left: 1em;
+	margin-bottom: 1em;
+}
+ul li::first-letter {
+  text-transform: capitalize;
+}
+ul li:first-child {
+	border-color: #4CAF50;
+	color: #4CAF50;
+	font-weight: bold;
+}
+@media (max-width: 480px) {
+	.search-container {
+		flex-wrap: wrap;
+	}
+	input[type="text"] {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	button {
+		margin-left: 0;
+		width: 100%;
+	
