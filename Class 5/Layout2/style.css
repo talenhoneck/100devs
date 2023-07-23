@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+header,footer{
+    background-color: green;
+    border: 3px solid black;
+    clear: both;
+    height: 100px;
+    width: 100%;
+}
+.container {
+    margin: 0 auto;
+}
+section{
+    border: 3px solid black;
+    height: 300px;
+    float: left;
+}
+.toprow{
+    width: 100%;
+}
+.left{
+    width: 40%;
+}
+.right{
+    width: 60%;
+}
