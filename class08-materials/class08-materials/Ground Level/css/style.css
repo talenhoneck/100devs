@@ -1,0 +1,298 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body *{
+  text-decoration: none;
+  font-family: sans-serif;
+}
+body a{
+  color: inherit;
+}
+html{
+  font-size: 62.5%;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+  position: relative;
+  background: #66768A;
+  padding: 20px 30px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+header ul {
+  float: left;
+  list-style: none;
+}
+ul > *{
+  color: white;
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+.logo-container{
+  position:absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 20%;
+  width: 40px;
+}
+.logo-container img{
+  width: 100%;
+}
+nav > a{
+  float: right;
+  color: #748b97;
+  background: white;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+/* hero section */
+
+.hero{
+  background: #66768A;
+  color: white;
+  text-align: center;
+}
+.hero h1{
+  padding-top: 75px;
+  font-size: 5rem;
+  font-weight: bold;
+}
+.hero p {
+  font-size: 1.7rem;
+  padding: 50px 230px 40px;
+}
+.hero > a{
+  font-size: 1.8rem;
+  color: lightgray;
+}
+.hero a + p{
+  color: #3D4849;
+  font-style: italic;
+  padding: 70px 0 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/*why*/
+
+.bun{
+  text-align: center;
+  color: #00022e;
+}
+
+.bun h2{
+  padding: 80px 0 80px 0;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.bun p{
+  font-size: 1.8rem;
+}
+.top p{
+  padding: 0 200px 150px;
+}
+
+/*gym stuff */
+
+.patty{
+  padding: 100px 50px 100px 50px;
+  background: #dbdfe2;
+  color: #3D4849;
+}
+.left-side,.right-side{
+  text-align: center;
+  width: 50%;
+}
+.left-side{
+  float: left;
+  
+}
+
+.right-side{
+  float: right;
+}
+
+.left-side > *, .right-side > *{
+  margin: 12px;
+}
+
+.patty div{
+  background-color: #66768a;
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.patty h3{
+  font-size: 2.0rem;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.patty p{
+  font-size: 1.6rem;
+  padding-bottom: 30px;
+}
+
+.alt-button{
+  font-size: 1.8rem;
+  border: 1px solid #3D4849;
+ 
+  padding: 8px 50px;
+   
+}
+.bottom p{
+  padding: 0 200px 50px;
+}
+/*Footer*/
+
+footer{ 
+  background: #151e27;
+  margin-top: 150px;
+  color: white;
+}
+.left-info{
+  float: left;
+}
+
+.social-links{
+  margin: 0 0 8px 25px;
+}
+
+.socialmedia-container{
+  float: left;
+  width: 50px;
+  margin: 20px 10px 0 0;
+
+}
+
+.social-links div:first-of-type{
+  margin: 14px 1px 0 0;
+}
+
+.social-links div:last-of-type{
+   width: 40px;
+}
+.socialmedia-container img{
+  width: 100%;
+}
+
+.site-links > *, .site-links li{
+  margin-bottom: 10px;
+}
+
+.site-links{
+  margin-left: 35px;
+}
+
+.left-info{
+  font-size: 1.3rem;
+}
+
+.left-info h5{
+  color: #B0B3B8;
+  font-size: 1.5rem;
+}
+
+
+.right-info{
+  margin: 35px 35px 20px 0;
+  float: right;
+}
+
+.right-info > *{
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+p > span, .right-info p{ 
+  font-weight: bold
+}
+
+.right-info p{
+  font-size: 1.5rem;
+
+}
+
+.right-info p + p{
+  font-weight: normal;
+}
+
+.copyright{
+  font-size: 1.5rem;
+  width: 100%;
+  float: left;
+  border-top: 1px solid white;
+  position: relative;
+}
+
+.copyright > p{
+  margin: 15px 20px 15px;
+
+}
+
+.footer-logo{
+  position: absolute;
+  right: 15px;
+  bottom: 1px;
+  width: 40px;
+}
+
+.footer-logo img{
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px){
+
+  .hero p{
+    padding: 50px 10px 40px;
+  }
+  
+  .top p{
+    padding: 0 10px 150px;
+  }
+
+  .left-side, .right-side{
+    margin: 0 auto 30px;
+    width: 100%;
+  }
+
+  .bottom p{
+    padding: 0 10px 50px;
+  }
+
+  .left-side, .right-side{
+    float: none;
+  }
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

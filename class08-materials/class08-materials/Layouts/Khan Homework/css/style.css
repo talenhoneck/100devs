@@ -1,0 +1,118 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body *{
+  text-decoration: none;
+  list-style: none;
+}
+body a{
+  color: inherit;
+}
+html{
+  font-size: 62.5%;
+  background: white;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* nav */
+header nav{
+border-bottom: 1px solid gray;
+width: 100%;
+float: left;
+color: #2F66F3;
+}
+
+nav> *{
+  width: 50%;
+  float: left;
+  font-size: 1rem;
+}
+
+.left-Nav li{
+  float: left;
+  padding: 1rem;
+  width: 10%;
+}
+.middle-Nav{
+  position: absolute;
+  left: 50%;
+}
+.middle-Nav >*{
+  height: 2rem;
+  float: left;
+  margin-top: 1.8rem;
+}
+.middle-Nav >img{
+  margin-right: 1rem;
+}
+.right-Nav li{
+float: right;
+padding-right: 1rem;
+}
+
+/* main */
+main{
+  width: 100%;
+}
+main > section{
+  width: 50%;
+  height: 500px;
+  float: left;
+  padding: 5%;
+}
+.m-left{
+  float: left;
+  width: 50%;
+}
+.m-left img{
+  width: 100%;
+}
+.m-right{
+  float: left;
+  width: 50%;
+}
+.m-right ul{
+  float: left;
+  width: 100%;
+  padding: 0;
+}
+.m-right li{
+  float: left;
+  width: 20%;
+}
+.buttons li{
+  float: left;
+  color: white;
+  background: #2F66F3;
+  padding: .5rem;
+  border-radius: 4px;
+  margin: 0 0.5rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
